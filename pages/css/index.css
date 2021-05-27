@@ -1,0 +1,18 @@
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 32px;
+    transition: 0.3s ease-in-out;
+}
+h2:hover {
+    color: royalblue;
+}
+.form > col-sm-6{
+    display: none;
+    border-style: none none solid none;
+}
+
+.select2 {
+    width: 100% !important;
+}

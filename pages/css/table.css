@@ -1,0 +1,22 @@
+.table-responsive {
+    border-radius: 10px;
+    background: rgba(233, 233, 233, 0.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+td:hover {
+    transition: 0.3s ease-in-out;
+    color: rgb(72, 131, 240);
+}
+thead {
+    background: rgb(72, 131, 240);
+    border-style: none none solid none;
+    border-color: rgba(38, 70, 158, 0.5);
+    height: 40px;
+    color: seashell;
+}
+tbody {
+    color: rgb(65, 65, 65);
+}
+.btn {
+    opacity: 0.9;
+}
