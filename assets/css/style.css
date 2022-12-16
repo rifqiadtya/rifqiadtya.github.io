@@ -1,48 +1,78 @@
+@font-face {
+  font-family: 'Unbounded Regular';
+  src: url(/assets/font/Unbounded-Bold.ttf);
+}
+
 html, body { height: 100%; }
 body {
   background:radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, #000000 100%);
   overflow: hidden;
 }
 
-.bgimg-1 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
-.bgimg-1 {
-  background-image: url("/assets/svg/waves.svg");
-  opacity: 1;
-  min-height: 100%;
+  
+.div1 { 
+    position: fixed;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 20%;
-  width: 100%;
-  text-align: center;
-  color: rgb(255, 255, 255);
+.div2 { 
+    position: absolute;
+    right: 2%;
+    grid-area: 1 / 2 / 2 / 3;
+    width: fit-content;
+  }
+  
+  .link {
+  text-align: right;
+  font-family: 'Unbounded Regular';
+  text-decoration: none;
+  font-size: 2rem;
+  color: aqua;
+  line-height: 135%;
+  opacity: 0.2;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
 }
+
+.link:hover {
+  color: aquamarine;
+  opacity: 1;
+}
+
+.subname {
+  font-family: 'Unbounded Regular';
+  width: fit-content;
+  margin-left: 1.1%;
+  color: rgba(255, 255, 255, 0.636);
+}
+
 
 .name {
+    text-align: left;
+    font-family: 'Unbounded Regular';
+    font-weight: 900;
+    font-size: 12rem;
+    width: fit-content;
     letter-spacing: 0;
-    transition: 1s ease-in-out;
+    line-height: 10rem;
+    transition: 0.8s ease-in-out;
     text-transform: uppercase;
+    color: antiquewhite;
 }
 
 .name:hover {
-    letter-spacing: 10px;
-}
-
-.nickname {
-    opacity: 0.1;
+    color: coral;
 }
 
 .ocean { 
-  height: 5%;
+  height: auto;
   width:100%;
   position:absolute;
   bottom:0;
